@@ -5,11 +5,11 @@ import React, { useState } from 'react';
 function App() {
   const [ taskState, setTaskState ] = useState({
     tasks: [
-      { title:"Dishes", deadline:"Today", description:"Empty dishwasher" },
-      { title:"Laundry", deadline:"Tomorrow", description:"Fold laundry and put away" },
-      { title:"Tidy", deadline:"Today" }
+      { id: 1, title:"Dishes", deadline:"Today", description:"Empty dishwasher" },
+      { id: 2, title:"Laundry", deadline:"Tomorrow", description:"Fold laundry and put away" },
+      { id: 3, title:"Tidy", deadline:"Today" }
     ]
-  })
+  });
 
   return (
     <div className="container">
@@ -19,6 +19,7 @@ function App() {
           title={task.title}
           description={task.description}
           deadline={task.deadline}
+          key={task.id}
         />
       ))}
     </div>
