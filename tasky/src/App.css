@@ -62,7 +62,14 @@ button {
   font-style: italic;
 }
 
-input[type=text], input[type=date] {
+.priority {
+  font-weight: bold;
+  background-color: red;
+  border-radius: 4px;
+  padding: 3%;
+}
+
+input[type=text], input[type=date], select {
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;

@@ -19,6 +19,15 @@ return (
             Details:
             <input type="text" name="description" onChange={(event) => props.change(event)} />
         </label>
+        <br/>
+        <label>
+            Priority:
+            <select name="priority" required onChange={(event) => props.change(event)} >
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </label>
         <input type="submit" value="Submit" />
         </form>
     </div>
